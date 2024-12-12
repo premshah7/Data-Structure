@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 public class PascalsTriangle {
@@ -12,7 +11,7 @@ public class PascalsTriangle {
             for(int j=0; j<(n-i); j++){
                 System.out.print(" ");
             }
-
+    
             for(int j=0; j<=i; j++){
                 System.out.print(num+" ");
                 num= num*(i-j)/(j+1);

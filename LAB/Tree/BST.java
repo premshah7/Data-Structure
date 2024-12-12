@@ -48,6 +48,35 @@ class Tree {
         postOrder(node.rptr);
         System.out.print(node.data + "-");
     }
+
+    public void  searching(Node root,int n){
+        if(root==null){
+            return ;
+        }
+        else if(root.lptr.data == n){
+            System.out.println("element is in lptr:"+n);
+        }
+        else if(root.rptr.data == n){
+            System.out.println("Element is in rptr:"+n);            
+        }
+    }
+
+    public void deletet(Node root , int n){
+        Node temp = root;
+        if(temp == null){
+            return ;
+        }
+        else if(temp.lptr == null){
+            temp = null;
+        }
+        else if(temp.rptr == null){
+            temp = null;
+        }
+        else{
+            deletet(root.lptr,n);
+        }
+        
+    }
     
 }
 
@@ -57,7 +86,8 @@ public class BST {
         t.root = t.create(t.root,5);
         t.root = t.create(t.root,3);
         t.root = t.create(t.root,7); 
-        t.preOrder(t.root);
+        // t.preOrder(t.root);
+        t.searching(t.root, 7);
         // t.inOrder(t.root);
         // t.postOrder(t.root);
     }

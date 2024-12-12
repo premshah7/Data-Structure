@@ -4,7 +4,7 @@ class Node {
     int data;
     Node link;
 
-    public Node(int data) {
+    Node(int data) {
         this.data = data;
     }
 }
@@ -24,14 +24,14 @@ class LL {
 
     public void ins_Last(int data) {
         Node n = new Node(data);
-        Node save = first;
+        Node temp = first;
         if (first == null) {
             first = n;
         } else {
-            while (save.link != null) {
-                save = save.link;
+            while (temp.link != null) {
+                temp = temp.link;
             }
-            save.link = n;
+            temp.link = n;
         }
     }
 

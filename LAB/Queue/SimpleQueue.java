@@ -40,12 +40,14 @@ public class SimpleQueue {
     }
 }
 
-class MethodsOfQueue {
+class Queue {
 
     int r, f, n;
     int[] Q;
 
     public MethodsOfQueue(int n) {
+
+        
         this.r = -1;
         this.f = -1;
         this.n = n;

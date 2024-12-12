@@ -21,17 +21,16 @@ public class Multiplication {
         }
 
         System.out.println("Product of matrix  is : ");
+        
         int[][] mul = new int[3][3];
         for(int i=0; i<3; i++){
-            for(int j=0; j<3; j++){
+            for(int j=0; j<3; j++){                                                      
                 for(int k=0; k<2; k++){
-                    mul[i][j] += arr1[i][k]*arr2[k][j];
+                    mul[i][j] += arr1[i][k] * arr2[k][j];
                 }
                 System.out.print(mul[i][j]+" ");
             }
             System.out.println();
         }
-        
-        
     }
 }
